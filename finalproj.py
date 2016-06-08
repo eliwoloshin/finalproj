@@ -4,11 +4,11 @@ import sys
 
 
 #while answer.lower() != 'no':
-gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game."))
+gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game: "))
 
 if gametype == 1:
     name = input("Please enter your name. ")
-    gamenumber = int(input("Hey "+name+", thanks for choosing to play the computer. How many games do you want to play? Make sure you choose an odd number. "))
+    gamenumber = int(input("Hey "+name+", thanks for choosing to play the computer. How many games do you want to play? Make sure you choose an odd number: "))
     if gamenumber%2==0:
         gamenumber = int(input("Looks like you made a mistake with that. Try again and be sure to put in an odd number this time."))
         if gamenumber%2==0:
@@ -18,7 +18,7 @@ if gametype == 1:
                 sys.exit()
     else:
         print("Nice choice!")
-    move1 = input("Make your move: type in rock, paper or scissors to make your move. ")
+    move1 = input("Make your move: type in rock, paper or scissors. ")
     if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
         move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
         if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
