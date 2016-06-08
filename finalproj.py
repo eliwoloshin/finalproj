@@ -5,7 +5,7 @@ gametype = input("Press 1 to play the computer, press 2 to play a two player gam
 if gametype == 1:
     name = input("Please enter your name.")
     gamenumber = ("Hey "+name+", thanks for choosing to play the computer. How many games do you want to play? Make sure you choose an odd number.")
-    gametype2 = input("Press 1 if you want to make the first move, or press 2 if you want the computer to make the first move.")
+    gametype2 = input("Now, press 1 if you want to make the first move, or press 2 if you want the computer to make the first move.")
     if gametype2 == 1:
         move1 = input("Make your move: type in rock, paper or scissors to make your move")
         if move1 !== "rock" and move1 !== "paper" and move1 !== "scissors":
