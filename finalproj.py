@@ -6,9 +6,9 @@ if gametype == 1:
     name = input("Please enter your name. ")
     gamenumber = input("Hey "+name+", thanks for choosing to play the computer. How many games do you want to play? Make sure you choose an odd number. ")
         if gamenumber%2==0:
-            print("Looks like you made a mistake with that. Try again and be sure to put in an odd number this time.")
+            gamenumber = int(input("Looks like you made a mistake with that. Try again and be sure to put in an odd number this time."))
         else:
-            
+            print("Nice choice!")
     gametype2 = input("Now, press 1 if you want to make the first move, or press 2 if you want the computer to make the first move. ")
     if gametype2 == 1:
         move1 = input("Make your move: type in rock, paper or scissors to make your move. ")
