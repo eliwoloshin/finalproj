@@ -5,7 +5,6 @@ import sys
 
 #while answer.lower() != 'no':
 gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game: "))
-#gametype = input("Hi! This game is called rock, paper, scissors. Do you want to play a single or double player game? Type in your answer. ")
 
 if gametype == 1:
     name = input("Please enter your name. ")
