@@ -37,7 +37,13 @@ if gametype == 1:
 elif gametype == 2:
     name1 = input("Player 1, please enter your name.")
     name2 = input("Player 2, please enter your name.")
-    print("Hey, "+name1+", look away from the computer so Player 1 can make his move without you seeing it.")
-    p1move1 = input("Player 1, make your move by typing in either rock, paper or scissors.")
-    print("Hey, "+name2+", look away from the computer so Player 2 can make his move without you seeing it.")
-    p2move1 = input("Player 2, make your move by typing in either rock, paper or scissors.")
+    p1move1 = input("Hey, "+name1+"! It's time for your turn. Make sure "+name2+"looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
+    p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+"looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
+    
+    
+    
+    
+    
+    
+    
+    
