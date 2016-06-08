@@ -4,13 +4,16 @@ gametype = input("Press 1 to play the computer, press 2 to play a two player gam
 
 if gametype == 1:
     name = input("Please enter your name.")
-    gametype2 = input("Hey "+name+", thanks for choosing to play the computer. Press 1 if you want to make the first move, or press 2 if you want the computer to make the first move.")
+    gamenumber = ("Hey "+name+", thanks for choosing to play the computer. How many games do you want to play? Make sure you choose an odd number.")
+    gametype2 = input("Press 1 if you want to make the first move, or press 2 if you want the computer to make the first move.")
     if gametype2 == 1:
         move1 = input("Make your move: type in rock, paper or scissors to make your move")
         if move1 !== "rock" and move1 !== "paper" and move1 !== "scissors":
             print("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
         elif move1 == "rock":
             print("The computer chose to put down paper. Looks like you lost.")
+            game2 = input("If you want to play again, press 1. If not, press 2. Thanks for playing.")
+            if game2 = input(
         elif move1 == "paper":
             print("The computer chose to put down scissors. Looks like you lost.")
         elif move1 == "scissors":
