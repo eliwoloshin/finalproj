@@ -1,4 +1,8 @@
-"rock paper scissors::"
+"""
+rock paper scissors::
+name: Eli Woloshin
+credit: http://stackoverflow.com/questions/19747371/python-exit-commands-why-so-many-and-when-should-each-be-used/19747562#19747562
+"""
 
 import sys
 
@@ -26,13 +30,13 @@ if gametype == 1:
             if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                     print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                     sys.exit()
-        elif move1 in ["rock", "Rock"]:
-            answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
-        elif move1 in ["paper", "Paper"]:
-            answer = input("The computer chose to put down scissors. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
-        elif move1 in ["scissors", "Scissors"]:
-            print("The computer chose to put down rock. Looks like you lost.")
-            answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
+    elif move1 in ["rock", "Rock"]:
+        answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
+    elif move1 in ["paper", "Paper"]:
+        answer = input("The computer chose to put down scissors. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
+    elif move1 in ["scissors", "Scissors"]:
+        print("The computer chose to put down rock. Looks like you lost.")
+        answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
 elif gametype == 2:
     name1 = input("Player 1, please enter your name.")
     name2 = input("Player 2, please enter your name.")
