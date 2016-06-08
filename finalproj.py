@@ -24,13 +24,12 @@ if gametype == 1:
         if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
             print("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
         if move1 == "rock":
-            print("The computer chose to put down paper. Looks like you lost.")
-            answer = input("That was a lot of fun. Do you want to play again? Give a yes or no answer.")
-            
+            answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
         if move1 in ["paper"]:
-            print("The computer chose to put down scissors. Looks like you lost.")
+            answer = input("The computer chose to put down scissors. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
         if move1 == "scissors":
-                print("The computer chose to put down rock. Looks like you lost.")
+            print("The computer chose to put down rock. Looks like you lost.")
+            answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
 elif gametype == 2:
     name1 = input("Player 1, please enter your name.")
     name2 = input("Player 2, please enter your name.")
