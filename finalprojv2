@@ -10,7 +10,7 @@ answer = "yes"
 p1score = 0
 p2score = 0
 
-gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game:                       "))
+gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game: "))
 #name = input("Please enter your name. ")
 print("----------------------------------------------------")
 gamenumber = int(input("Hi! How many games do you want to play? Make sure you choose an odd number: "))
@@ -28,26 +28,33 @@ if gamenumber%2==0:
             sys.exit()
     else:
         print("Nice choice!")
+        print("----------------------------------------------------")
 
 
 while answer.lower() != "no":
     while gamenumber > 0:
         if gametype == 1:
-            move1 = input("Make your move: type in rock, paper or scissors. ")
+            move1 = input("Make your move: type in rock, paper or scissors: ")
+            print("----------------------------------------------------")
             if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                 move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+                print("----------------------------------------------------")
                 if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                     move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                    print("----------------------------------------------------")
                     if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                         print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
+                        print("----------------------------------------------------")
                         sys.exit()
             elif move1 in ["rock", "Rock"]:
                 answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
+                print("----------------------------------------------------")
             elif move1 in ["paper", "Paper"]:
                 answer = input("The computer chose to put down scissors. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
+                print("----------------------------------------------------")
             elif move1 in ["scissors", "Scissors"]:
-                print("The computer chose to put down rock. Looks like you lost.")
                 answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
+                print("----------------------------------------------------")
         elif gametype == 2:
             name1 = input("Player 1, please enter your name.")
             name2 = input("Player 2, please enter your name.")
