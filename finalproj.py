@@ -41,8 +41,19 @@ elif gametype == 2:
     p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+"looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
     if p1move1 == "rock" and p2move1 == "paper":
         answer = input(+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
-    if p1move1 == "rock" and p2move1 == "paper":
-        answer = input(+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
+    if p2move1 == "rock" and p1move1 == "paper":
+        answer = input(+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
+    if p1move1 == "rock" and p2move1 == "scissors":
+        answer = input(+name1+" put down rock, and "+name2+" put down scissors, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
+    if p2move1 == "rock" and p1move1 == "scissors":
+        answer = input(+name2+" put down rock, and "+name1+" put down scissors, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
+    if p1move1 == "scissors" and p2move1 == "paper":
+        answer = input(+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
+    if p2move1 == "scissors" and p1move1 == "paper":
+        answer = input(+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
+    if p1move1 == "
+
+
 
     
     
