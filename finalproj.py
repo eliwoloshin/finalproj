@@ -25,8 +25,8 @@ if gametype == 1:
             print("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
         if move1 == "rock":
             print("The computer chose to put down paper. Looks like you lost.")
-            game2 = input("If you want to play again, press 1. If not, press 2. Thanks for playing.")
-            #if game2 = input(
+            answer = input("That was a lot of fun. Do you want to play again? Give a yes or no answer.")
+            
         if move1 in ["paper"]:
             print("The computer chose to put down scissors. Looks like you lost.")
         if move1 == "scissors":
