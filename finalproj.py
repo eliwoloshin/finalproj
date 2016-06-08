@@ -22,7 +22,13 @@ if gametype == 1:
     if gametype2 == 1:
         move1 = input("Make your move: type in rock, paper or scissors to make your move. ")
         if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-            print("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+            move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+            if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                    print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
+                    sys.exit()
+
         if move1 == "rock":
             answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
         if move1 in ["paper"]:
