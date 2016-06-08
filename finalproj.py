@@ -4,7 +4,7 @@ gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to 
 
 if gametype == 1:
     name = input("Please enter your name. ")
-    gamenumber = input("Hey "+name+", thanks for choosing to play the computer. How many games do you want to play? Make sure you choose an odd number. ")
+    gamenumber = int(input("Hey "+name+", thanks for choosing to play the computer. How many games do you want to play? Make sure you choose an odd number. "))
     if gamenumber%2==0:
         gamenumber = int(input("Looks like you made a mistake with that. Try again and be sure to put in an odd number this time."))
     else:
