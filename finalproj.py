@@ -41,7 +41,22 @@ while answer.lower() != "no":
         name1 = input("Player 1, please enter your name.")
         name2 = input("Player 2, please enter your name.")
         p1move1 = input("Hey, "+name1+"! It's time for your turn. Make sure "+name2+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
+        if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+            p1move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+            if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                p1move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                    print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
+                    sys.exit()
+
         p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
+        if p2move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+            p2move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+            if p2move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                p2move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                if p2move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                    print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
+                    sys.exit()
         if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
             p1move1 = input("Both of you played a rock, which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors.")
             p2move2 = input(""+name2+" it's your turn now. Make your move by typing in rock, paper or scissors. ")
