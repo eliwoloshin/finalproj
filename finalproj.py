@@ -5,6 +5,7 @@ import sys
 
 #while answer.lower() != 'no':
 gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game: "))
+#gametype = input("Hi! This game is called rock, paper, scissors. Do you want to play a single or double player game? Type in your answer. ")
 
 if gametype == 1:
     name = input("Please enter your name. ")
@@ -26,11 +27,11 @@ if gametype == 1:
             if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                     print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                     sys.exit()
-        if move1 in ["rock", "Rock"]:
+        elif move1 in ["rock", "Rock"]:
             answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
-        if move1 in ["paper", "Paper"]:
+        elif move1 in ["paper", "Paper"]:
             answer = input("The computer chose to put down scissors. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
-        if move1 in ["scissors", "Scissors"]:
+        elif move1 in ["scissors", "Scissors"]:
             print("The computer chose to put down rock. Looks like you lost.")
             answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
 elif gametype == 2:
