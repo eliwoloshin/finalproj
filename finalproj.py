@@ -13,6 +13,7 @@ if gametype == 1:
             gamenumber = int(input("Looks like you made another mistake with that. Try again and be sure to put in an odd number this time. This is your last chance. "))
             if gamenumber%2==0:
                 print("It looks like you're having some trouble thinking of odd numbers. This site might help you: http://www.aaamath.com/g25a2_x1.htm. After you've done some research, come on back and give this game another try. Good luck!")
+                sys.exit()
     else:
         print("Nice choice!")
     gametype2 = input("Now, press 1 if you want to make the first move, or press 2 if you want the computer to make the first move. ")
