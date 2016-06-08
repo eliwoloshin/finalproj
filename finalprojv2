@@ -74,29 +74,29 @@ while answer.lower() != "no":
                 gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
-                answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! You have "+str(gamenumber)+" number of games left. ")
+                answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! You have "+str(gamenumber)+" games left. ")
             elif p2move1 == "rock" and p1move1 == "paper":
                 gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
-                answer = input(""+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! You have "+str(gamenumber)+" number of games left. ")
+                answer = input(""+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! You have "+str(gamenumber)+" games left. ")
             elif p1move1 == "rock" and p2move1 == "scissors":
-                answer = input(""+name1+" put down rock, and "+name2+" put down scissors, so "+name1+" wins! You have "+str(gamenumber)+" number of games left. ")
+                answer = input(""+name1+" put down rock, and "+name2+" put down scissors, so "+name1+" wins! You have "+str(gamenumber)+" games left. ")
                 gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
             elif p2move1 == "rock" and p1move1 == "scissors":
-                answer = input(""+name2+" put down rock, and "+name1+" put down scissors, so "+name2+" wins! You have "+str(gamenumber)+" number of games left. ")
+                answer = input(""+name2+" put down rock, and "+name1+" put down scissors, so "+name2+" wins! You have "+str(gamenumber)+" games left. ")
             elif p1move1 == "scissors" and p2move1 == "paper":
                 gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
-                answer = input(""+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! You have "+str(gamenumber)+" number of games left. ")
+                answer = input(""+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! You have "+str(gamenumber)+" games left. ")
             elif p2move1 == "scissors" and p1move1 == "paper":
                 gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
-                p1move1 = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! You have "+str(gamenumber)+" number of games left. "+name1+" make your move now.")
+                p1move1 = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! You have "+str(gamenumber)+" games left. "+name1+" make your move now.")
                 '''
                 if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                     p1move2 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
