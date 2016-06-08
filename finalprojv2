@@ -96,7 +96,18 @@ while answer.lower() != "no":
                 gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
-                score = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! You have "+str(gamenumber)+" number of games left.")
+                p1move1 = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! You have "+str(gamenumber)+" number of games left. "+name1+" make your move now.")
+                '''
+                if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                    p1move2 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+                    if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                        p1move2 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                        if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+                            print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
+                            sys.exit()
+                p2move2 = 
+                '''
+
         if gamenumber == 0:
             answer = input(""+name2+" won with "+p2score+" number of games. Do you want to play again? Give a yes or no answer.")
             if answer == "no":
