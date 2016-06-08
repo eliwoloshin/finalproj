@@ -35,7 +35,6 @@ while answer.lower() != "no":
         elif move1 in ["paper", "Paper"]:
             answer = input("The computer chose to put down scissors. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
         elif move1 in ["scissors", "Scissors"]:
-            print("The computer chose to put down rock. Looks like you lost.")
             answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer. ")
     elif gametype == 2:
         name1 = input("Player 1, please enter your name.")
