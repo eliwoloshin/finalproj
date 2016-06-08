@@ -12,6 +12,7 @@ p2score = 0
 
 gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game:                       "))
 #name = input("Please enter your name. ")
+print("----------------------------------------------------")
 gamenumber = int(input("Hi! How many games do you want to play? Make sure you choose an odd number: "))
 originalnumber = gamenumber
 if gamenumber%2==0:
