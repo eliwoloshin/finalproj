@@ -57,14 +57,20 @@ while answer.lower() != "no":
                 print("----------------------------------------------------")
         elif gametype == 2:
             name1 = input("Player 1, please enter your name.")
+            print("----------------------------------------------------")
             name2 = input("Player 2, please enter your name.")
+            print("----------------------------------------------------")
             p1move1 = input("Hey, "+name1+"! It's time for your turn. Make sure "+name2+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
+            print("----------------------------------------------------")
             if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                 p1move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+                print("----------------------------------------------------")
                 if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                     p1move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                    print("----------------------------------------------------")
                     if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                         print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
+                        print("----------------------------------------------------")
                         sys.exit()
         
             p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
