@@ -13,6 +13,7 @@ p2score = 0
 gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game: "))
 #name = input("Please enter your name. ")
 gamenumber = int(input("Hi! How many games do you want to play? Make sure you choose an odd number: "))
+originalnumber = gamenumber
 if gamenumber%2==0:
     gamenumber = int(input("Looks like you made a mistake with that. Try again and be sure to put in an odd number this time."))
     if gamenumber%2==0:
@@ -110,8 +111,11 @@ while answer.lower() != "no":
 
         if gamenumber == 0:
             answer = input(""+name2+" won with "+str(p2score)+" games. Do you want to play again? Give a yes or no answer.")
-            if answer == "no":
+            if answer == "no" and originalnumber > 1: 
                 print("Final score: "+name1+" won "+str(p1score)+"number of games." +name2+" won "+str(p2score)+" games.")
+            if answer == "no" and originalnumber = 1:
+                print("Final score: "+name1+" won "+str(p1score)+"number of games." +name2+" won "+str(p2score)+" games.")
+
 
 
 
