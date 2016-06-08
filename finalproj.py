@@ -51,17 +51,17 @@ elif gametype == 2:
             if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
                 answer = input("You tied again! It seems like you're pretty evenly matched. Do you want to play again? Give a yes or no answer. ")
     elif p1move1 == "rock" and p2move1 == "paper":
-        answer = input(+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
+        answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
     elif p2move1 == "rock" and p1move1 == "paper":
-        answer = input(+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
+        answer = input(""+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
     elif p1move1 == "rock" and p2move1 == "scissors":
-        answer = input(+name1+" put down rock, and "+name2+" put down scissors, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
+        answer = input(""+name1+" put down rock, and "+name2+" put down scissors, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
     elif p2move1 == "rock" and p1move1 == "scissors":
-        answer = input(+name2+" put down rock, and "+name1+" put down scissors, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
+        answer = input(""+name2+" put down rock, and "+name1+" put down scissors, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
     elif p1move1 == "scissors" and p2move1 == "paper":
-        answer = input(+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
+        answer = input(""+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
     elif p2move1 == "scissors" and p1move1 == "paper":
-        answer = input(+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
+        answer = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
 
 
 
