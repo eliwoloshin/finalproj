@@ -109,7 +109,7 @@ while answer.lower() != "no":
                 '''
 
         if gamenumber == 0:
-            answer = input(""+name2+" won with "str(+p2score+)" games. Do you want to play again? Give a yes or no answer.")
+            answer = input(""+name2+" won with "+str(p2score)+" games. Do you want to play again? Give a yes or no answer.")
             if answer == "no":
                 print("Final score: "+name1+" won "+str(p1score)+"number of games." +name2+" won "+str(p2score)+" games.")
 
