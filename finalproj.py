@@ -37,8 +37,8 @@ if gametype == 1:
 elif gametype == 2:
     name1 = input("Player 1, please enter your name.")
     name2 = input("Player 2, please enter your name.")
-    p1move1 = input("Hey, "+name1+"! It's time for your turn. Make sure "+name2+"looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
-    p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+"looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
+    p1move1 = input("Hey, "+name1+"! It's time for your turn. Make sure "+name2+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
+    p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors.")
     if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
         p1move1 = input("Both of you played a rock, which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors.")
         p2move2 = input(+name2+" it's your turn now. Make your move by typing in rock, paper or scissors. ")
