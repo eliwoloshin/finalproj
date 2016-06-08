@@ -51,7 +51,8 @@ elif gametype == 2:
         answer = input(+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer. ")
     if p2move1 == "scissors" and p1move1 == "paper":
         answer = input(+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer. ")
-    if p1move1 == "
+    if p1move1 == "rock" and p2move1 == "rock":
+        play2 = input("Both of you played a rock, which means this round was a tie. 
 
 
 
