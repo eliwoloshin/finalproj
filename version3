@@ -15,8 +15,9 @@ compscore = 0
 
 gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game: "))
 #name = input("Please enter your name. ")
+print("                                                    ")
 print("----------------------------------------------------")
-
+print("                                                    ")
 
 """
 gamenumber = int(input("Hi! How many games do you want to play? Make sure you choose an odd number: "))
@@ -38,15 +39,22 @@ if gamenumber%2==0:
 """
 if gametype == 1:
         name = input("Please enter your name: ")
+        print("                                                    ")
+        print("----------------------------------------------------")
+        print("                                                    ")
         while answer.lower() != "no":
             move1 = input("Hey, "+name+", thanks for choosing to play the computer. It's time to make your move: type in rock, paper or scissors: ")
-            print("----------------------------------------------------")
+            print("                                                 ")
             if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                 move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+                print("                                                    ")
                 print("----------------------------------------------------")
+                print("                                                    ")
                 if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                     move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                    print("                                                    ")
                     print("----------------------------------------------------")
+                    print("                                                    ")
                     if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                         print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                         print("----------------------------------------------------")
@@ -54,15 +62,21 @@ if gametype == 1:
             elif move1 in ["rock", "Rock"]:
                 answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer: ")
                 compscore = compscore + 1
+                print("                                                    ")
                 print("----------------------------------------------------")
+                print("                                                    ")
             elif move1 in ["paper", "Paper"]:
                 answer = input("The computer chose to put down scissors. Looks like you lost. Do you want to play again? Give a yes or no answer: ")
                 compscore = compscore + 1
+                print("                                                    ")
                 print("----------------------------------------------------")
+                print("                                                    ")
             elif move1 in ["scissors", "Scissors"]:
                 answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer: ")
                 compscore = compscore + 1
+                print("                                                    ")
                 print("----------------------------------------------------")
+                print("                                                    ")
         print("Final scores:")
         print(""+name+" finished with "+str(namescore)+" games.")
         print("The computer finished with "+str(compscore)+" games.")
