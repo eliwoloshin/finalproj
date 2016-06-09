@@ -156,8 +156,8 @@ while answer.lower() != "no":
 """
 
 
-print(""+name1+ finished with ""+str(p1score)+" games.")
-print(print(""+name2+ finished with ""+str(p2score)+" games.")
+print(""+name1+ "finished with "+str(p1score)+" games.")
+print(print(""+name2+" finished with "+str(p2score)+" games.")
 
 
     
