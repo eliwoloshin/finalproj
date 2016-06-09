@@ -63,9 +63,9 @@ if gametype == 1:
                 answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer: ")
                 compscore = compscore + 1
                 print("----------------------------------------------------")
-            print("Final scores:")
-            print(""+name+" finished with "+str(namescore)+" games.")
-            print("The computer finished with "+str(compscore)+" games.")
+        print("Final scores:")
+        print(""+name+" finished with "+str(namescore)+" games.")
+        print("The computer finished with "+str(compscore)+" games.")
 
 
 if gametype == 2:
