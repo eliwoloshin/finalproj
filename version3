@@ -200,7 +200,8 @@ if gametype == 2:
             print("                                                    ")
             print("----------------------------------------------------")
             print("                                                    ")
-        print("Final scores:")
+        print("FINAL SCORES:")
+        print("                                               ")
         print(""+name1+" finished with "+str(p1score)+" games.")
         print(""+name2+" finished with "+str(p2score)+" games.")
 
