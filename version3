@@ -128,10 +128,10 @@ while answer.lower() != "no":
                 answer = input(""+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer:  ")
                 print("----------------------------------------------------")
             elif p2move1 == "scissors" and p1move1 == "paper":
-                gamenumber = gamenumber-1
+                #gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
-                p1move1 = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
+                answer = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
                 print("----------------------------------------------------")
                 '''
                 if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
