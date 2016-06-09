@@ -33,9 +33,8 @@ if gamenumber%2==0:
         print("Nice choice!")
         print("----------------------------------------------------")
 """
-
-while answer.lower() != "no":
-        if gametype == 1:
+if gametype == 1:
+        while answer.lower() != "no":
             move1 = input("Make your move: type in rock, paper or scissors: ")
             print("----------------------------------------------------")
             if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
@@ -57,82 +56,84 @@ while answer.lower() != "no":
             elif move1 in ["scissors", "Scissors"]:
                 answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer: ")
                 print("----------------------------------------------------")
-        elif gametype == 2:
-            name1 = input("Player 1, please enter your name: ")
-            print("----------------------------------------------------")
-            name2 = input("Player 2, please enter your name: ")
-            print("----------------------------------------------------")
-            p1move1 = input("Hey, "+name1+"! It's time for your turn. Make sure "+name2+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors: ")
+
+if gametype == 2:
+    while answer.lower() != "no":
+        name1 = input("Player 1, please enter your name: ")
+        print("----------------------------------------------------")
+        name2 = input("Player 2, please enter your name: ")
+        print("----------------------------------------------------")
+        p1move1 = input("Hey, "+name1+"! It's time for your turn. Make sure "+name2+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors: ")
+        print("----------------------------------------------------")
+        if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+            p1move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
             print("----------------------------------------------------")
             if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                p1move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
+                p1move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance: ")
                 print("----------------------------------------------------")
                 if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                    p1move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance: ")
+                    print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                     print("----------------------------------------------------")
-                    if p1move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                        print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
-                        print("----------------------------------------------------")
-                        sys.exit()
-        
-            p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors: ")
+                    sys.exit()
+    
+        p2move1 = input("Hey, "+name2+"! It's time for your turn. Make sure "+name1+" looks away before you go. Once they're looking away, make your move by typing in either rock, paper or scissors: ")
+        print("----------------------------------------------------")
+        if p2move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
+            p2move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
             print("----------------------------------------------------")
             if p2move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                p2move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
+                p2move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
                 print("----------------------------------------------------")
                 if p2move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                    p2move1 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                    print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                     print("----------------------------------------------------")
-                    if p2move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                        print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
-                        print("----------------------------------------------------")
-                        sys.exit()
+                    sys.exit()
+        if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
+            p1move1 = input("Both of you played a "+p1move1+", which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors: ")
+            print("----------------------------------------------------")
+            p2move2 = input(""+name2+" it's your turn now. Make your move by typing in rock, paper or scissors. ")
+            print("----------------------------------------------------")
             if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
                 p1move1 = input("Both of you played a "+p1move1+", which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors: ")
                 print("----------------------------------------------------")
                 p2move2 = input(""+name2+" it's your turn now. Make your move by typing in rock, paper or scissors. ")
                 print("----------------------------------------------------")
                 if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
-                    p1move1 = input("Both of you played a "+p1move1+", which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors: ")
+                    answer = input("You tied again! It seems like you're pretty evenly matched. Do you want to play again? Give a yes or no answer: ")
                     print("----------------------------------------------------")
-                    p2move2 = input(""+name2+" it's your turn now. Make your move by typing in rock, paper or scissors. ")
-                    print("----------------------------------------------------")
-                    if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
-                        answer = input("You tied again! It seems like you're pretty evenly matched. Do you want to play again? Give a yes or no answer: ")
-                        print("----------------------------------------------------")
-            elif p1move1 == "rock" and p2move1 == "paper":
-                #gamenumber = gamenumber-1
-                p1score = p1score
-                p2score = p2score +1
-                answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer:  ")
-                print("----------------------------------------------------")
-            elif p2move1 == "rock" and p1move1 == "paper":
-                #gamenumber = gamenumber-1
-                p1score = p1score
-                p2score = p2score +1
-                answer = input(""+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
-                print("----------------------------------------------------")
-            elif p1move1 == "rock" and p2move1 == "scissors":
-                answer = input(""+name1+" put down rock, and "+name2+" put down scissors, so "+name1+" wins! Do you want to play again? Give a yes or no answer: ")
-                print("----------------------------------------------------")
-                #gamenumber = gamenumber-1
-                p1score = p1score
-                p2score = p2score +1
-            elif p2move1 == "rock" and p1move1 == "scissors":
-                answer = input(""+name2+" put down rock, and "+name1+" put down scissors, so "+name2+" wins! Do you want to play again? Give a yes or no answer:  ")
-                print("----------------------------------------------------")
-            elif p1move1 == "scissors" and p2move1 == "paper":
-                gamenumber = gamenumber-1
-                p1score = p1score
-                p2score = p2score +1
-                answer = input(""+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer:  ")
-                print("----------------------------------------------------")
-            elif p2move1 == "scissors" and p1move1 == "paper":
-                #gamenumber = gamenumber-1
-                p1score = p1score
-                p2score = p2score +1
-                answer = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
-                print("----------------------------------------------------")
+        elif p1move1 == "rock" and p2move1 == "paper":
+            #gamenumber = gamenumber-1
+            p1score = p1score
+            p2score = p2score +1
+            answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer:  ")
+            print("----------------------------------------------------")
+        elif p2move1 == "rock" and p1move1 == "paper":
+            #gamenumber = gamenumber-1
+            p1score = p1score
+            p2score = p2score +1
+            answer = input(""+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
+            print("----------------------------------------------------")
+        elif p1move1 == "rock" and p2move1 == "scissors":
+            answer = input(""+name1+" put down rock, and "+name2+" put down scissors, so "+name1+" wins! Do you want to play again? Give a yes or no answer: ")
+            print("----------------------------------------------------")
+            #gamenumber = gamenumber-1
+            p1score = p1score
+            p2score = p2score +1
+        elif p2move1 == "rock" and p1move1 == "scissors":
+            answer = input(""+name2+" put down rock, and "+name1+" put down scissors, so "+name2+" wins! Do you want to play again? Give a yes or no answer:  ")
+            print("----------------------------------------------------")
+        elif p1move1 == "scissors" and p2move1 == "paper":
+            gamenumber = gamenumber-1
+            p1score = p1score
+            p2score = p2score +1
+            answer = input(""+name1+" put down scissors, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer:  ")
+            print("----------------------------------------------------")
+        elif p2move1 == "scissors" and p1move1 == "paper":
+            #gamenumber = gamenumber-1
+            p1score = p1score
+            p2score = p2score +1
+            answer = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
+            print("----------------------------------------------------")
                 '''
                 if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                     p1move2 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
@@ -155,7 +156,7 @@ while answer.lower() != "no":
 
 """
 
-
+print("Final scores:")
 print(""+name1+" finished with "+str(p1score)+" games.")
 print(""+name2+" finished with "+str(p2score)+" games.")
 
