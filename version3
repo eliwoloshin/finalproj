@@ -44,7 +44,9 @@ if gametype == 1:
         print("                                                    ")
         while answer.lower() != "no":
             move1 = input("Hey, "+name+", thanks for choosing to play the computer. It's time to make your move: type in rock, paper or scissors: ")
-            print("                                                 ")
+            print("                                                    ")
+            print("----------------------------------------------------")
+            print("                                                    ")
             if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                 move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
                 print("                                                    ")
