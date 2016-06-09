@@ -65,7 +65,7 @@ if gametype == 1:
                 print("----------------------------------------------------")
             print("Final scores:")
             print(""+name+" finished with "+str(p1score)+" games.")
-            print(""+nam+" finished with "+str(p2score)+" games.")
+            print("The computer finished with "+str(p2score)+" games.")
 
 
 if gametype == 2:
