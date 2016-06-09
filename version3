@@ -104,7 +104,7 @@ while answer.lower() != "no":
                 #gamenumber = gamenumber-1
                 p1score = p1score
                 p2score = p2score +1
-                answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! ")
+                answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer:  ")
                 print("----------------------------------------------------")
             elif p2move1 == "rock" and p1move1 == "paper":
                 #gamenumber = gamenumber-1
@@ -156,7 +156,8 @@ while answer.lower() != "no":
 """
 
 
-
+print(str(p1score))
+print(str(p2score))
 
 
     
