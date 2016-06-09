@@ -35,7 +35,8 @@ if gamenumber%2==0:
 """
 if gametype == 1:
         while answer.lower() != "no":
-            move1 = input("Make your move: type in rock, paper or scissors: ")
+            name = input("Please enter your name: ")
+            move1 = input("Hey, "+name+", thanks for choosing to play the computer. It's time to make your move: type in rock, paper or scissors: ")
             print("----------------------------------------------------")
             if move1 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                 move1 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
@@ -56,6 +57,10 @@ if gametype == 1:
             elif move1 in ["scissors", "Scissors"]:
                 answer = input("The computer chose to put down rock. Looks like you lost. Do you want to play again? Give a yes or no answer: ")
                 print("----------------------------------------------------")
+            print("Final scores:")
+            print(""+name1+" finished with "+str(p1score)+" games.")
+            print(""+name2+" finished with "+str(p2score)+" games.")
+
 
 if gametype == 2:
     while answer.lower() != "no":
