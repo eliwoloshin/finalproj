@@ -60,7 +60,7 @@ while answer.lower() != "no":
             p1move1 = input("Both of you played a "+p1move1+", which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors.")
             p2move2 = input(""+name2+" it's your turn now. Make your move by typing in rock, paper or scissors. ")
             if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
-                p1move1 = input("Both of you played a rock, which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors.")
+                p1move1 = input("Both of you played a "+p1move1+", which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors.")
                 p2move2 = input(""+name2+" it's your turn now. Make your move by typing in rock, paper or scissors. ")
                 if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
                     answer = input("You tied again! It seems like you're pretty evenly matched. Do you want to play again? Give a yes or no answer. ")
