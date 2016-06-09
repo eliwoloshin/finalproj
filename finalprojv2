@@ -133,9 +133,9 @@ while answer.lower() != "no":
                 print("----------------------------------------------------")
                 '''
                 if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                    p1move2 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make.")
+                    p1move2 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
                     if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-                        p1move2 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance. ")
+                        p1move2 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance: ")
                         if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
                             print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                             sys.exit()
