@@ -134,6 +134,10 @@ if gametype == 2:
             p2score = p2score +1
             answer = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
             print("----------------------------------------------------")
+        print("Final scores:")
+        print(""+name1+" finished with "+str(p1score)+" games.")
+        print(""+name2+" finished with "+str(p2score)+" games.")
+
 '''
 if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
     p1move2 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
@@ -156,9 +160,6 @@ p2move2 =
 
 """
 
-print("Final scores:")
-print(""+name1+" finished with "+str(p1score)+" games.")
-print(""+name2+" finished with "+str(p2score)+" games.")
 
 
     
