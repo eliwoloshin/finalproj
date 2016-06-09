@@ -85,6 +85,7 @@ if gametype == 1:
         print("The computer finished with "+str(compscore)+" games.")
 
 
+
 if gametype == 2:
     name1 = input("Player 1, please enter your name: ")
     print("                                                    ")
@@ -204,6 +205,11 @@ if gametype == 2:
         print("                                               ")
         print(""+name1+" finished with "+str(p1score)+" games.")
         print(""+name2+" finished with "+str(p2score)+" games.")
+        print("                                                    ")
+        print("----------------------------------------------------")
+        print("                                                    ")
+
+        
 
 '''
 if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
