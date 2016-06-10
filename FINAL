@@ -248,14 +248,14 @@ if gametype == 2:
         if p2score == 0:
             print(""+name2" didn't win any games.")
         if p2score > 1:
-            print(""+name2" won "+str(p2score)+" games.")
+            print(""+name2+" won "+str(p2score)+" games.")
         finalscore = p1score - p2score
         if finalscore > 0:
             print(""+name1+" won!")
         if finalscore == 0:
             print("This round ended as a tie!")
         if finalscore < 1:
-            print(""+name2" won!")
+            print(""+name2+" won!")
         #print(""+name1+" finished with "+str(p1score)+" games.")
         #print(""+name2+" finished with "+str(p2score)+" games.")
         print("                                                    ")
