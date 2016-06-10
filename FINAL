@@ -101,9 +101,9 @@ if gametype == 1:
             print(""+name+" won "+str(namescore)+" games.")
         if compscore == 1:
             print("The computer won one game.")
-        if namescore == 0:
+        if compscore == 0:
             print("The computer didn't win any games.")
-        if namescore > 1:
+        if compscore > 1:
             print("The computer won "+str(compscore)+" games.")
         finalscore = namescore - compscore
         if finalscore > 0:
@@ -238,8 +238,29 @@ if gametype == 2:
             print("                                                    ")
         print("FINAL SCORES:")
         print("                                               ")
-        print(""+name1+" finished with "+str(p1score)+" games.")
-        print(""+name2+" finished with "+str(p2score)+" games.")
+        finalscore = p1score - p2score
+        if p1score == 1:
+            print(""+name+" won one game.")
+        if p1score == 0:
+            print(""+name+" didn't win any games.")
+        if p1score > 1:
+            print(""+name+" won "+str(namescore)+" games.")
+        if p2score == 1:
+            print("The computer won one game.")
+        if p2score == 0:
+            print("The computer didn't win any games.")
+        if p2score > 1:
+            print("The computer won "+str(compscore)+" games.")
+        finalscore = namescore - compscore
+        if finalscore > 0:
+            print(""+name+" won!")
+        if finalscore == 0:
+            print("This round ended as a tie!")
+        if finalscore < 1:
+            print("The computer won!")
+
+        #print(""+name1+" finished with "+str(p1score)+" games.")
+        #print(""+name2+" finished with "+str(p2score)+" games.")
         print("                                                    ")
         print("----------------------------------------------------")
         print("                                                    ")
