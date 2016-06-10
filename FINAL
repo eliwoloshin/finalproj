@@ -12,6 +12,7 @@ p2score = 0
 
 namescore = 0
 compscore = 0
+#tiescore = 0
 
 gametype = int(input("Hi! This game is called rock, paper, scissors. Press 1 to play the computer, press 2 to play a two player game: "))
 #name = input("Please enter your name. ")
@@ -62,11 +63,14 @@ if gametype == 1:
                 answer = input("The computer put down rock. Looks like you lost this time. Do you want to play again? Give a yes or no answer: ")
                 compscore = compscore +1
             elif choice(foo) == "paper" and move1 == "scissors":
-                f
+                answer = input("The computer put down paper. Looks like you won! Do you want to play again? Give a yes or no answer: ")
+                namescore = namescore +1
             elif choice(foo) == "scissors" and move1 == "paper":
-                f
+                answer = input("The computer put down paper. Looks like you lost this one. Do you want to play again? Give a yes or no answer: ")
             elif choice(foo) == move1:
-                f
+                move1 = input("The computer also put down "+move1+"! That means this round was a tie. Make another move by typing in rock, paper or scissors: ")
+                answer = yes
+                #tiescore = tiescore +1
             
             """
             elif move1 in ["rock", "Rock"]:
