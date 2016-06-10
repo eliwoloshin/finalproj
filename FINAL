@@ -50,16 +50,21 @@ if gametype == 1:
                         sys.exit()
             
             elif choice(foo) == "rock" and move1 == "paper":
-                f
+                answer = input("The computer put down rock. Looks like you lost this time. Do you want to play again? Give a yes or no answer: ")
+                compscore = compscore +1
             elif choice(foo) == "paper" and move1 == "rock":
-                f
+                answer = input("The computer put down paper. Looks like you won! Do you want to play again? Give a yes or no answer: ")
+                namescore = namescore +1
             elif choice(foo) == "scissors" and move1 == "rock":
-                f
+                answer = input("The computer put down scissors. Looks like you lost this time. Do you want to play again? Give a yes or no answer: ")
+                compscore = compscore +1
             elif choice(foo) == "rock" and move1 == "scissors":
                 f
             elif choice(foo) == "paper" and move1 == "scissors":
                 f
             elif choice(foo) == "scissors" and move1 == "paper":
+                f
+            elif choice(foo) == move1:
                 f
             
             """
@@ -140,7 +145,8 @@ if gametype == 2:
                     print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                     print("----------------------------------------------------")
                     sys.exit()
-        if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
+        #if p1move1 == "rock" and p2move1 == "rock" or p1move1 == "paper" and p2move1 == "paper" or p1move1 == "scissors" and p2move1 == "scissors":
+        if p1move1 == p2move1:
             p1move1 = input("Both of you played a "+p1move1+", which means this round was a tie. You will both play again to break the tie. "+name1+", make your move by typing in rock, paper or scissors: ")
             print("                                                    ")
             print("----------------------------------------------------")
