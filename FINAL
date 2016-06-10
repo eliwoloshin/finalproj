@@ -112,7 +112,6 @@ if gametype == 1:
             print("This round ended as a tie!")
         if finalscore < 1:
             print("The computer won!")
-        
         #print(""+name+" finished with "+str(namescore)+" games.")
         #print("The computer finished with "+str(compscore)+" games.")
         print("                                                    ")
@@ -257,7 +256,6 @@ if gametype == 2:
             print("This round ended as a tie!")
         if finalscore < 1:
             print(""+name2" won!")
-
         #print(""+name1+" finished with "+str(p1score)+" games.")
         #print(""+name2+" finished with "+str(p2score)+" games.")
         print("                                                    ")
