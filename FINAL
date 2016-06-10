@@ -88,7 +88,7 @@ if gametype == 1:
                 compscore = compscore +1
             elif choice(foo) == move1:
                 move1 = input("The computer also put down "+move1+"! That means this round was a tie. Make another move by typing in rock, paper or scissors: ")
-                answer = yes
+                answer = "yes"
                 #tiescore = tiescore +1
         print("FINAL SCORES:")
         print("                                                     ")
