@@ -177,14 +177,14 @@ if gametype == 2:
         elif p1move1 == "rock" and p2move1 == "paper":
             #gamenumber = gamenumber-1
             p2score = p2score +1
-            answer = input(""+name2+" put down rock, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer:  ")
+            answer = input(""+name2+" put down paper, and "+name1+" put down rock, so "+name2+" wins! Do you want to play again? Give a yes or no answer:  ")
             print("                                                    ")
             print("----------------------------------------------------")
             print("                                                    ")
         elif p2move1 == "rock" and p1move1 == "paper":
             #gamenumber = gamenumber-1
             p1score = p1score +1
-            answer = input(""+name1+" put down rock, and "+name2+" put down paper, so "+name1+" wins! Do you want to play again? Give a yes or no answer: ")
+            answer = input(""+name1+" put down paper, and "+name2+" put down rock, so "+name1+" wins! Do you want to play again? Give a yes or no answer: ")
             print("                                                    ")
             print("----------------------------------------------------")
             print("                                                    ")
