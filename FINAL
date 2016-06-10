@@ -208,7 +208,6 @@ if gametype == 2:
             print("                                                    ")
         elif p2move1 == "scissors" and p1move1 == "paper":
             #gamenumber = gamenumber-1
-            p1score = p1score
             p2score = p2score +1
             answer = input(""+name2+" put down scissors, and "+name1+" put down paper, so "+name2+" wins! Do you want to play again? Give a yes or no answer: ")
             print("                                                    ")
