@@ -19,24 +19,6 @@ print("                                                    ")
 print("----------------------------------------------------")
 print("                                                    ")
 
-"""
-gamenumber = int(input("Hi! How many games do you want to play? Make sure you choose an odd number: "))
-print("----------------------------------------------------")
-originalnumber = gamenumber
-if gamenumber%2==0:
-    gamenumber = int(input("Looks like you made a mistake with that. Try again and be sure to put in an odd number this time."))
-    print("----------------------------------------------------")
-    if gamenumber%2==0:
-        gamenumber = int(input("Looks like you made another mistake with that. Try again and be sure to put in an odd number this time. This is your last chance. "))
-        print("----------------------------------------------------")
-        if gamenumber%2==0:
-            print("It looks like you're having some trouble thinking of odd numbers. This site might help you: http://www.aaamath.com/g25a2_x1.htm. After you've done some research, come on back and give this game another try. Good luck!")
-            print("----------------------------------------------------")
-            sys.exit()
-    else:
-        print("Nice choice!")
-        print("----------------------------------------------------")
-"""
 if gametype == 1:
         name = input("Please enter your name: ")
         print("                                                    ")
@@ -212,30 +194,6 @@ if gametype == 2:
         print("                                                    ")
         print("----------------------------------------------------")
         print("                                                    ")
-
-        
-
-'''
-if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-    p1move2 = input("Looks like you goofed that. Try again and be sure not to misspell the move you want to make: ")
-    if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-        p1move2 = input("Looks like you goofed that again. Try again and be sure not to misspell the move you want to make. This is your last chance: ")
-        if p1move2 not in ["rock", "Rock", "paper", "Paper", "scissors", "Scissors", "scissor", "Scissor"]:
-            print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
-            sys.exit()
-p2move2 = 
-'''
-"""
-
-        if gamenumber == 0:
-            answer = input(""+name2+" won with "+str(p2score)+" games. Do you want to play again? Give a yes or no answer.")
-            print("----------------------------------------------------")
-            if answer == "no" and originalnumber > 1: 
-                print("Final score: "+name1+" won "+str(p1score)+" games." +name2+" won "+str(p2score)+" games.")
-            if answer == "no" and originalnumber == 1:
-                print("Final score: "+name1+" won "+str(p1score)+" game." +name2+" won "+str(p2score)+" game.")
-
-"""
 
 
 
