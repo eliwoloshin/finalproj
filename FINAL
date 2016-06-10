@@ -51,10 +51,10 @@ if gametype == 1:
             
             elif choice(foo) == "rock" and move1 == "paper":
                 answer = input("The computer put down rock. Looks like you won! Do you want to play again? Give a yes or no answer: ")
-                compscore = compscore +1
+                namescore = namescore +1
             elif choice(foo) == "paper" and move1 == "rock":
                 answer = input("The computer put down paper. Looks like you lost this time. Do you want to play again? Give a yes or no answer: ")
-                namescore = namescore +1
+                compscore = compscore +1
             elif choice(foo) == "scissors" and move1 == "rock":
                 answer = input("The computer put down scissors. Looks like you won! Do you want to play again? Give a yes or no answer: ")
                 namescore = namescore +1
