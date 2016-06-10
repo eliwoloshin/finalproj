@@ -48,6 +48,19 @@ if gametype == 1:
                         print("It looks like you're having some trouble with your spelling. Do some research and come back later to try again.")
                         print("----------------------------------------------------")
                         sys.exit()
+            
+            if choice(foo) == "rock" and move1 == "paper":
+                f
+            if choice(foo) == "paper" and move1 == "rock":
+                f
+            if choice(foo) == "scissors" and move1 == "rock":
+                f
+            if choice(foo) == "rock" and move1 == "scissors":
+                f
+            if choice(foo) == "paper" and move1 == "scissors":
+                f
+            
+            """
             elif move1 in ["rock", "Rock"]:
                 answer = input("The computer chose to put down paper. Looks like you lost. Do you want to play again? Give a yes or no answer: ")
                 compscore = compscore + 1
@@ -66,6 +79,7 @@ if gametype == 1:
                 print("                                                    ")
                 print("----------------------------------------------------")
                 print("                                                    ")
+            """
         print("FINAL SCORES:")
         print("                                                     ")
         print(""+name+" finished with "+str(namescore)+" games.")
