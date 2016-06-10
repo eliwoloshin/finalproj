@@ -92,8 +92,28 @@ if gametype == 1:
                 #tiescore = tiescore +1
         print("FINAL SCORES:")
         print("                                                     ")
-        print(""+name+" finished with "+str(namescore)+" games.")
-        print("The computer finished with "+str(compscore)+" games.")
+        if namescore == 1:
+            print(""+name+" won one game.")
+        if namescore == 0:
+            print(""+name+" didn't win any games.")
+        if namescore > 1:
+            print(""+name+" won "+str(namescore)+" games.")
+        if compscore == 1:
+            print("The computer won one game.")
+        if namescore == 0:
+            print("The computer didn't win any games.")
+        if namescore > 1:
+            print("The computer won "+str(compscore)+" games.")
+        finalscore = namescore - compscore
+        if finalscore > 0:
+            print(""+name+" won!")
+        if finalscore == 0:
+            print("This round ended as a tie!")
+        if finalscore < 1:
+            print("The computer won!")
+        
+        #print(""+name+" finished with "+str(namescore)+" games.")
+        #print("The computer finished with "+str(compscore)+" games.")
         print("                                                    ")
         print("----------------------------------------------------")
         print("                                                    ")
