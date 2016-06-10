@@ -238,20 +238,19 @@ if gametype == 2:
             print("                                                    ")
         print("FINAL SCORES:")
         print("                                               ")
-        finalscore = p1score - p2score
         if p1score == 1:
-            print(""+name+" won one game.")
+            print(""+name1+" won one game.")
         if p1score == 0:
-            print(""+name+" didn't win any games.")
+            print(""+name1+" didn't win any games.")
         if p1score > 1:
-            print(""+name+" won "+str(namescore)+" games.")
+            print(""+name1+" won "+str(p1score)+" games.")
         if p2score == 1:
-            print("The computer won one game.")
+            print(""+name2" won one game.")
         if p2score == 0:
-            print("The computer didn't win any games.")
+            print(""+name2" didn't win any games.")
         if p2score > 1:
-            print("The computer won "+str(compscore)+" games.")
-        finalscore = namescore - compscore
+            print(""+name2" won "+str(p2score)+" games.")
+        finalscore = p1score - p2score
         if finalscore > 0:
             print(""+name+" won!")
         if finalscore == 0:
