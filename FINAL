@@ -246,7 +246,7 @@ if gametype == 2:
         if p2score == 1:
             print(""+name2+" won one game.")
         if p2score == 0:
-            print(""+name2" didn't win any games.")
+            print(""+name2+" didn't win any games.")
         if p2score > 1:
             print(""+name2+" won "+str(p2score)+" games.")
         finalscore = p1score - p2score
