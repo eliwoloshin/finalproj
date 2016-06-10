@@ -49,15 +49,17 @@ if gametype == 1:
                         print("----------------------------------------------------")
                         sys.exit()
             
-            if choice(foo) == "rock" and move1 == "paper":
+            elif choice(foo) == "rock" and move1 == "paper":
                 f
-            if choice(foo) == "paper" and move1 == "rock":
+            elif choice(foo) == "paper" and move1 == "rock":
                 f
-            if choice(foo) == "scissors" and move1 == "rock":
+            elif choice(foo) == "scissors" and move1 == "rock":
                 f
-            if choice(foo) == "rock" and move1 == "scissors":
+            elif choice(foo) == "rock" and move1 == "scissors":
                 f
-            if choice(foo) == "paper" and move1 == "scissors":
+            elif choice(foo) == "paper" and move1 == "scissors":
+                f
+            elif choice(foo) == "scissors" and move1 == "paper":
                 f
             
             """
