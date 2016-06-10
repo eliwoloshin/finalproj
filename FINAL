@@ -24,6 +24,7 @@ print("                                                    ")
 foo = ["rock", "paper", "scissors"]
 print(choice(foo))
 
+#PROBLEM WITH ENTERING PAPER AND HAVING TO PUT IT IN AGAIN, OR IT SAYING YOU LOST WHEN IT IS A TIE
 
 if gametype == 1:
         name = input("Please enter your name: ")
